@@ -8,8 +8,15 @@ using Catch::Matchers::Equals;
 
 // Fix the following class
 class Complex {
-    void operator>>(std::string&) const;
-    void operator<<(const std::string&);
+  private:
+  std::string "<a>+=<b>i";
+
+  public:
+  std::ostringstream ouput;
+  output << std::setfill() std::setw() << int a << setw(2);
+  std:: << output.str();
+
+    
 };
 
 //------------------------------
